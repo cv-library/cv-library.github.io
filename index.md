@@ -1,9 +1,11 @@
 ---
 layout: page
-title: Welcome!
+title: Articles
 tagline:
 ---
 {% include JB/setup %}
+
+
 
 <ul class="posts">
   {% for post in site.posts %}
