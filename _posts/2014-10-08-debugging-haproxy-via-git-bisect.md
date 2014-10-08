@@ -2,8 +2,7 @@
 layout: post
 title: How we used git bisect to debug haproxy
 author: tim
-category: operations
-tags: git bisect haproxy tomcat solr debugging
+tags: git bisect haproxy tomcat solr debugging operations
 ---
 
 Recently, we at [CV-Library](http://www.cv-library.co.uk/) were preparing an upgrade to the server
