@@ -9,7 +9,7 @@ Long lived difficult to merge feature branches, features that behave differently
 
 In order to make life easier for ourselves, we wrote [Toggle](https://metacpan.org/pod/distribution/Toggle).
 
-> **Attending the London Perl Workshop (LPW 2014)? Be sure to see [Tim Retout's talk] (http://act.yapc.eu/lpw2014/talk/5734) to learn more about using Toggle.**
+####Attending the London Perl Workshop (LPW 2014)? Be sure to see [Tim Retout's talk] (http://act.yapc.eu/lpw2014/talk/5734) to learn more about using Toggle.
 
 Toggle.pm is based on [James Golick's Ruby "rollout" library](https://github.com/FetLife/rollout).
 
