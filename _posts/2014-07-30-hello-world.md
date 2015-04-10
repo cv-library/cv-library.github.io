@@ -1,7 +1,7 @@
 ---
+author: Tim Retout
 layout: post
-title: Hello, World!
-author: tim
+title:  Hello, World!
 ---
 CV-Library is an awesome place to work, and we in the technical team want to
 share a bit more of what we do with the world.

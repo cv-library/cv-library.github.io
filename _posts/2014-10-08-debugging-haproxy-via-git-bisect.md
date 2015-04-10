@@ -1,8 +1,8 @@
 ---
+author: Tim Retout
 layout: post
-title: How we used git bisect to debug haproxy
-author: tim
-tags: git bisect haproxy tomcat solr debugging operations
+title:  How we used git bisect to debug haproxy
+tags:   git bisect haproxy tomcat solr debugging operations
 ---
 
 Recently, we at [CV-Library](http://www.cv-library.co.uk/) were preparing an upgrade to the server
@@ -102,7 +102,7 @@ fi
 
 Run like this:
 
-{% highlight bash %}
+{% highlight text %}
 $ git bisect start 1.5-dev10 master --
 $ git bisect run ../bisect
 {% endhighlight %}
@@ -110,7 +110,7 @@ $ git bisect run ../bisect
 That took us to [this commit](https://github.com/haproxy/haproxy/commit/70dffdaa10419c8cab039003f8b4a883e3f5648b),
 first released in haproxy 1.5-dev22:
 
-{% highlight bash %}
+{% highlight text %}
 commit 70dffdaa10419c8cab039003f8b4a883e3f5648b
 Author: Willy Tarreau <w@1wt.eu>
 Date:   Thu Jan 30 03:07:23 2014 +0100
@@ -147,7 +147,7 @@ load balance keep-alive connections.
 To work around this, for the moment we added this line to our
 haproxy.cfg, to restore the default 1.4 behaviour:
 
-{% highlight bash %}
+{% highlight text %}
 option http-tunnel
 {% endhighlight %}
 

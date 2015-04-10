@@ -1,10 +1,8 @@
 ---
+author: Katherine Spice
 layout: post
-title: "Introducing Toggle"
-author: katherine 
-tags: 
+title:  Introducing Toggle
 ---
-
 Long lived difficult to merge feature branches, features that behave differently on staging to production and risky deployments are all things that we at [CV-Library](http://www.cv-library.co.uk/) like to avoid :) 
 
 In order to make life easier for ourselves, we wrote [Toggle](https://metacpan.org/pod/distribution/Toggle).
@@ -24,8 +22,8 @@ First we set up our storage and Toggle objects as global variables available to 
 {% highlight perl %}
 use Redis;
 use Toggle;
-    
-my $redis = Redis->new;
+
+my $redis  = Redis->new;
 my $toggle = Toggle->new( storage => $redis );
 {% endhighlight %}
 
@@ -49,7 +47,7 @@ $toggle->activate_group( job_search_NG => 'staff' );
 Enable the feature in the controller:
 
 {% highlight perl %}
-if ( $toggle->is_active( job_search_NG => $user) ) {
+if ( $toggle->is_active( job_search_NG => $user ) ) {
     # Show this user the shiny new feature
 } else {
     # Show existing feature
@@ -71,7 +69,7 @@ $toggle->activate_percentage( job_search_NG => 25 );
 In the event of a problem, then this is all it takes to reduce the percentage in the rollout to 0:
 
 {% highlight perl %}
-$toggle->deactivate_percentage( 'job_search_NG' );
+$toggle->deactivate_percentage('job_search_NG');
 {% endhighlight %}
 
 And once we're satisfied the rollout is a success, we remove the check from the controller and the old feature from the code base.
