@@ -58,4 +58,4 @@ sub write {
 In order to be backward compatible we set the default values of these accessors
 to be exactly the same as it was, so as not to stress people out about where their logs have gone :)
 
-See the updated code at [https://github.com/haoyayoi/Net-APNS](). Many thanks to [haoyayoi](https://github.com/haoyayoi) for merging our patch, we're looking forward to the next release of Net-APNS!
+See the updated code at [https://github.com/haoyayoi/Net-APNS](https://github.com/haoyayoi/Net-APNS). Many thanks to [haoyayoi](https://github.com/haoyayoi) for merging our patch, we're looking forward to the next release of Net-APNS!
