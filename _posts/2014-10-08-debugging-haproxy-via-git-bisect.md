@@ -1,7 +1,7 @@
 ---
 author: Tim Retout
 layout: post
-title:  How we used git bisect to debug haproxy
+title:  How we used git bisect to debug HAProxy
 tags:   git bisect haproxy tomcat solr debugging operations
 ---
 
@@ -23,7 +23,7 @@ Server: Apache-Coyote/1.1
 
 Tomcat has a [history of returning 505 status codes](https://www.google.co.uk/search?q=tomcat+505) due to its
 over-strict parsing of HTTP.  But we hadn't changed our code!  Our
-suspicions immediately turned to haproxy, which we use to load balance
+suspicions immediately turned to HAProxy, which we use to load balance
 across the Solr cluster - the script did not return this error if we
 pointed it directly at Tomcat.
 
@@ -63,9 +63,9 @@ issue.  We know from past experience that our script performance
 suffers if we disable this option.
 
 We were then able to confirm that the problem did not show under
-haproxy 1.4.25, which we were using previously.  Studying the traffic
+HAProxy 1.4.25, which we were using previously.  Studying the traffic
 using Wireshark did not show anything obvious, and we confirmed that
-the issue persisted on haproxy's master branch.
+the issue persisted on HAProxy's master branch.
 
 Since we were really stuck by this point, we resorted to a [git bisect](http://git-scm.com/docs/git-bisect).
 This took a few goes to get right, but we ended up with a script like
@@ -108,7 +108,7 @@ $ git bisect run ../bisect
 {% endhighlight %}
 
 That took us to [this commit](https://github.com/haproxy/haproxy/commit/70dffdaa10419c8cab039003f8b4a883e3f5648b),
-first released in haproxy 1.5-dev22:
+first released in HAProxy 1.5-dev22:
 
 {% highlight text %}
 commit 70dffdaa10419c8cab039003f8b4a883e3f5648b
@@ -137,11 +137,11 @@ Date:   Thu Jan 30 03:07:23 2014 +0100
     been fixed, and the doc for config options has been updated.
 {% endhighlight %}
 
-Aha!  Reading up on 'http-tunnel', the behaviour of haproxy has
-significantly changed - if you used a keep-alive connection, haproxy
+Aha!  Reading up on 'http-tunnel', the behaviour of HAProxy has
+significantly changed - if you used a keep-alive connection, HAProxy
 1.4 would only process the first request, and it would then leave the
 TCP connection open between client and server (i.e. no load
-balancing).  In 1.5, haproxy by default will try to do clever stuff to
+balancing).  In 1.5, HAProxy by default will try to do clever stuff to
 load balance keep-alive connections.
 
 To work around this, for the moment we added this line to our
