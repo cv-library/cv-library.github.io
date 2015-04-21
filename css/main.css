@@ -29,33 +29,6 @@ code{padding:2px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e
 pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:20px;word-break:break-all;word-wrap:break-word;white-space:pre;white-space:pre-wrap;background-color:#f5f5f5;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);border-radius:4px;}
 pre code{padding:0;color:inherit;white-space:pre;white-space:pre-wrap;background-color:transparent;border:0;}
 
-.nav{margin-left:0;margin-bottom:20px;list-style:none;}
-.nav>li>a{display:block;}
-.nav>li>a:hover{text-decoration:none;background-color:#eee;}
-
-.nav>.disabled>a{color:#999;}
-.nav>.disabled>a:hover{text-decoration:none;background-color:transparent;cursor:default;}
-.navbar{overflow:visible;margin-bottom:20px;}
-.navbar-inner{min-height:40px;padding-left:20px;padding-right:20px;background-color:#fafafa;background-image:linear-gradient(to bottom, #ffffff, #f2f2f2);background-repeat:repeat-x;border:1px solid #d4d4d4;border-radius:4px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.065);}
-.navbar-inner:before,.navbar-inner:after{display:table;content:"";line-height:0;}
-.navbar-inner:after{clear:both;}
-.navbar .brand{background-image:url(https://avatars0.githubusercontent.com/u/4519644?v=3&s=39);background-repeat:no-repeat;text-indent:40px;float:left;display:block;padding:10px 10px 10px;margin-left:-20px;font-size:20px;font-weight:200;color:#777777;text-shadow:0 1px 0 #ffffff;}
-.navbar .brand:hover{text-decoration:none;}
-.navbar .nav{position:relative;left:0;display:block;float:left;margin:0 10px 0 0;}
-.navbar .nav>li{float:left;}
-.navbar .nav>li>a{float:none;padding:10px 15px 10px;color:#777777;text-decoration:none;text-shadow:0 1px 0 #ffffff;}
-.navbar .nav>li>a:focus,.navbar .nav>li>a:hover{background-color:transparent;color:#333333;text-decoration:none;}
-.navbar .nav>.active>a,.navbar .nav>.active>a:hover,.navbar .nav>.active>a:focus{color:#555555;text-decoration:none;background-color:#e5e5e5;box-shadow:inset 0 3px 8px rgba(0, 0, 0, 0.125);}
-
-@media (max-width:767px){
-body{padding-left:20px;padding-right:20px;}
-}
-
-@media (max-width:979px){
-body{padding-top:0;}
-.navbar .brand{padding-left:10px;padding-right:10px;margin:0 0 0 -5px;}
-}
-
 a {
     color: #2a7ae2;
     text-decoration: none;
@@ -86,7 +59,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height:20px;
-    margin: 0;
+    margin: 48px 0 0;
 }
 
 footer {
@@ -108,6 +81,45 @@ footer a {
 }
 
 footer a:visited { color: #777 }
+
+header {
+    background: linear-gradient(to bottom, #005da4, #003777);
+    height: 48px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 332.5 278.75"><path d="M0 278.75h782.5V0H0v278.75z" fill-opacity="0"/><path d="M311.01 105.864L233.204 28.06c-6.626-6.626-17.47-6.626-24.096 0L92.27 144.9c-6.627 6.626-6.627 17.47 0 24.096l77.802 77.805c6.625 6.63 17.472 6.63 24.097 0l116.84-116.84c6.62-6.62 6.62-17.47 0-24.09" fill="%23fff"/><path d="M134.803 195.26c-4.284 1.516-8.894 2.344-13.7 2.344-22.645 0-41-18.355-41-41.003 0-22.64 18.355-41 41-41 4.958 0 9.71.88 14.11 2.5 0 0 13.442 2.66 24.46 23.9l29.08 56.95 41.947-83.07" fill="none" stroke="%23fff" stroke-width="41.25" stroke-linecap="round" stroke-linejoin="round"/><path d="M130.84 184.065c-3.117 1.104-6.393 1.664-9.737 1.664-16.06 0-29.126-13.07-29.126-29.13s13.066-29.13 29.126-29.13c3.452 0 6.823.59 10.022 1.76.58.21 1.176.38 1.782.5-.3-.06-.442-.1-.443-.1.355.1 8.804 2.65 16.67 17.81l29.044 56.88c2.032 3.98 6.13 6.48 10.602 6.47 4.47-.01 8.558-2.53 10.572-6.52l41.948-83.06c2.956-5.86.606-13-5.248-15.96-5.855-2.96-12.997-.61-15.952 5.25l-41.948 83.06c2.017-3.99 6.103-6.51 10.574-6.52 4.47-.01 8.57 2.49 10.603 6.47l-29.08-56.94c-13.31-25.64-30.79-29.76-32.73-30.15.6.12 1.2.29 1.78.5-5.83-2.14-11.95-3.22-18.2-3.22-29.16 0-52.88 23.72-52.88 52.88 0 29.16 23.72 52.88 52.87 52.88 6.05 0 11.99-1.02 17.66-3.03 6.18-2.19 9.42-8.98 7.23-15.16-2.19-6.18-8.98-9.42-15.16-7.23" fill="%23253a74"/></svg>') no-repeat;
+    display: table;
+    height: 48px;
+    margin: auto;
+    max-width: 740px;
+}
+
+nav a {
+    color: #fff !important;
+    display: table-cell;
+    padding: 0 15px;
+    vertical-align: middle;
+}
+
+nav a:first-child {
+    font-size: 20px;
+    padding-left: 58px;
+    width: 100%;
+}
+
+nav a:first-child:hover {
+    background: none;
+}
+
+nav a:hover,
+nav a.active {
+    background: #5bb543;
+    text-decoration: none;
+}
 
 .container-narrow {
   margin: 0 auto;
@@ -244,24 +256,6 @@ h1, h2, h3 {
         padding: 0 15px;
     }
 }
-
-/**
- * Site header
- */
-.site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
-  min-height: 56px;
-  position: relative; }
-
-.site-title {
-  font-size: 26px;
-  line-height: 56px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left; }
-  .site-title, .site-title:visited {
-    color: #424242; }
 
 /**
  * Page content

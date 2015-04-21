@@ -11,21 +11,18 @@
         {{ page.js }}
     </head>
     <body>
-        <header class="navbar">
-            <div class="navbar-inner">
-                <div class="container-narrow">
-                    <a class="brand" href="/">{{ site.title }}</a>
-                    <ul class="nav">
-                        <li {% if page.url == '/archive/' %}class="active"{% endif %}>
-                            <a href="/archive/">Archive</a>
-                        </li>
-                        <li><a href="/rss.xml">RSS</a>
-                        <li {% if page.url == '/tags/' %}class="active"{% endif %}>
-                            <a href="/tags/">Tags</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <header>
+            <nav>
+                <a href="/">{{ site.title }}</a>
+                <a {% if page.url == '/archive/' %}class="active"{% endif %} href="/archive/">
+                    Archive
+                </a>
+                </a>
+                <a href="/rss.xml">RSS</a>
+                <a {% if page.url == '/tags/' %}class="active"{% endif %} href="/tags/">
+                    Tags
+                </a>
+            </nav>
         </header>
         <div class="page-content">
             <div class="wrapper">{{ content }}</div>
