@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+export JAVA_HOME=/usr/lib/jvm/default
+
+[ -d validator ] || git clone https://github.com/validator/validator.git
+
+cd validator
+
+[ -e build/dist/vnu.jar ] || python2 ./build/build.py jar
+
+java -jar build/dist/vnu.jar `find ../_site -name '*.html'`

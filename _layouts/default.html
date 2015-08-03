@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width initial-scale=1">
-        <link rel="icon" href="/icon.png">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-        <script src="/js/main.js"></script>
-        <title>{{ page.title }}</title>
-        {{ page.js }}
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="/">{{ site.title }}</a>
-                <a {% if page.url == '/archive/' %}class="active"{% endif %} href="/archive/">
-                    Archive
-                </a>
-                <a href="/rss.xml">RSS</a>
-                <a {% if page.url == '/tags/' %}class="active"{% endif %} href="/tags/">
-                    Tags
-                </a>
-            </nav>
-        </header>
-        <div class="page-content">
-            <div class="wrapper">{{ content }}</div>
-        </div>
-        <footer>
-            <a data-color="77c159" id="android" href="https://play.google.com/store/apps/details?id=allthetopbananas.cvlibrary">android</a>
-            •
-            <a data-color="da2037" id="cpan" href="https://metacpan.org/author/CVLIBRARY">cpan</a>
-            •
-            <a data-color="333333" id="email" href="mailto:admin@cv-library.co.uk">email</a>
-            •
-            <a data-color="3b579d" id="fb" href="https://www.facebook.com/CVLibraryUK">facebook</a>
-            •
-            <a data-color="333333" id="git" href="https://github.com/cv-library">github</a>
-            •
-            <a data-color="dd4b39" id="google" href="https://plus.google.com/+cvlibrary/posts">google+</a>
-            •
-            <a data-color="333333" id="ios" href="https://itunes.apple.com/gb/app/cv-library.co.uk/id451978300">ios</a>
-            •
-            <a data-color="1c87bd" id="linkedin" href="https://www.linkedin.com/company/298012">linkedin</a>
-            •
-            <a data-color="55acee" id="twitter" href="https://twitter.com/CV-Library">twitter</a>
-        </footer>
-    </body>
-</html>
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="icon" href="/icon.png">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<script src="/js/main.js"></script>
+<title>{{ page.title }}</title>
+{{ page.js }}
+
+<header>
+    <nav>
+        <a href="/">{{ site.title }}</a>
+        <a {% if page.url == '/archive/' %}class="active"{% endif %} href="/archive/">
+            Archive
+        </a>
+        <a href="/rss.xml">RSS</a>
+        <a {% if page.url == '/tags/' %}class="active"{% endif %} href="/tags/">
+            Tags
+        </a>
+    </nav>
+</header>
+<div class="page-content">
+    <div class="wrapper">{{ content }}</div>
+</div>
+<footer>
+    <a data-color="77c159" id="android" href="https://play.google.com/store/apps/details?id=allthetopbananas.cvlibrary">android</a>
+    •
+    <a data-color="da2037" id="cpan" href="https://metacpan.org/author/CVLIBRARY">cpan</a>
+    •
+    <a data-color="333333" id="email" href="mailto:admin@cv-library.co.uk">email</a>
+    •
+    <a data-color="3b579d" id="fb" href="https://www.facebook.com/CVLibraryUK">facebook</a>
+    •
+    <a data-color="333333" id="git" href="https://github.com/cv-library">github</a>
+    •
+    <a data-color="dd4b39" id="google" href="https://plus.google.com/+cvlibrary/posts">google+</a>
+    •
+    <a data-color="333333" id="ios" href="https://itunes.apple.com/gb/app/cv-library.co.uk/id451978300">ios</a>
+    •
+    <a data-color="1c87bd" id="linkedin" href="https://www.linkedin.com/company/298012">linkedin</a>
+    •
+    <a data-color="55acee" id="twitter" href="https://twitter.com/CV-Library">twitter</a>
+</footer>
