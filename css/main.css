@@ -281,6 +281,15 @@ h1, h2, h3 {
     .post-title {
       font-size: 36px; } }
 
+.post-subtitle {
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: -1px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-subtitle {
+      font-size: 26px; } }
+
 .post-content {
   margin-bottom: 30px; }
   .post-content h2 {

@@ -4,7 +4,7 @@ layout: post
 title:  Introducing Toggle
 tags: perl
 ---
-Long lived difficult to merge feature branches, features that behave differently on staging to production and risky deployments are all things that we at [CV-Library](http://www.cv-library.co.uk/) like to avoid :) 
+Long lived difficult to merge feature branches, features that behave differently on staging to production and risky deployments are all things that we at [CV-Library](http://www.cv-library.co.uk/) like to avoid :)
 
 In order to make life easier for ourselves, we wrote [Toggle](https://metacpan.org/pod/distribution/Toggle).
 
@@ -75,7 +75,7 @@ $toggle->deactivate_percentage('job_search_NG');
 
 And once we're satisfied the rollout is a success, we remove the check from the controller and the old feature from the code base.
 
-See the [POD](https://metacpan.org/pod/distribution/Toggle/lib/Toggle.pod) for more use cases. 
+See the [POD](https://metacpan.org/pod/distribution/Toggle/lib/Toggle.pod) for more use cases.
 
 Get Toggle on [GitHub](https://github.com/cv-library/Toggle) or [CPAN](https://metacpan.org/release/Toggle).
 
