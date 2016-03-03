@@ -5,7 +5,7 @@ title: Introducing Scientist
 subtitle: We're going to try science
 tags: cpan perl perl6
 ---
-Refactoring code is a necessity in any codebase; doing it safely is hard (though easier with tools like [Toggle](https://metacpan.org/pod/distribution/Toggle)). We often want to compare and contrast one solution against another and make sure that, not only get the same answers, we get the same (or better) performance. At CV-Library we have encountered this many times and found many one-off solutions to the problem.
+Refactoring code is a necessity in any codebase; doing it safely is hard (though easier with tools like [Toggle](https://metacpan.org/pod/distribution/Toggle)). We often want to compare and contrast one solution against another and make sure that, not only do we get the same answers, we get the same (or better) performance. At CV-Library we have encountered this many times and found many one-off solutions to the problem.
 
 Recently, we were [inspired](http://githubengineering.com/scientist/) by the GitHub [Scientist (Ruby)](https://github.com/github/scientist) project to write a generic solution, and so [Scientist (Perl5)](https://metacpan.org/pod/Scientist) got written and added to CPAN along with it's plucky little sister [Scientist (Perl6)](http://modules.perl6.org/?q=Scientist) available via Panda/Zef for the Perl6 community.
 
