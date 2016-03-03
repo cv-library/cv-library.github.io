@@ -63,7 +63,7 @@ my $experiment = MyPersonal::Scientist->new(
 my $result = $experiment->run;
 {% endhighlight %}
 
-With the above code in place, every time SomePerlScript.pl is run your Statsd server will be updated with counters for matched or mismatched and timing info for both paths.
+With the above code in place, every time some_perl_script.pl is run your Statsd server will be updated with counters for matched or mismatched and timing info for both paths.
 
 In the office, we have started using Scientist within code we are working on where we are re-wiring parts of the codebase to use more modern design ideas and it has been helpful already in identifying subtle bugs where some variant of the parameters creates different results. The timing information has also been useful to us to remove concerns that the new code performs better than the old code.
 
