@@ -13,7 +13,7 @@ Scientist allows you to compare two pieces of code produce identical results and
 
 The real value in Scientist is when you create your own personal publish() method.
 
-For example, here at CV-Library we like to chart things (See the LPW2014 talk "[Feature Toggles and Graphs](http://act.yapc.eu/lpw2014/talk/5734)"). So when we extended Scientist with our own CV-Library::Scientist module we told it to push the timing information of experiments to Statsd. This way every experiment any one of our developers creates will be published automatically to Statsd with zero setup.
+For example, here at CV-Library we like to chart things (see the LPW2014 talk "[Feature Toggles and Graphs](http://act.yapc.eu/lpw2014/talk/5734)"). So when we extended Scientist with our own CV-Library::Scientist module we told it to push the timing information of experiments to Statsd. This way every experiment any one of our developers creates will be published automatically to Statsd with zero setup.
 
 Below is an example of how you might do just that:
 
