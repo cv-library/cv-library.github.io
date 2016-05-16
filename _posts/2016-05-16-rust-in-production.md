@@ -12,6 +12,7 @@ The app we discuss here is responsible for analysing job text to determine categ
 I hope to accurately describe pains and gains of using rust and perhaps motivate its developers to fix some of issues we faced :-)
 
 Lets start with end result: this graph presents average response time after switching from python to rust:
+![graphite graph](/assets/rust_deployment.png)
 
 You can see significant reduction of processing time and elimination of large occasional spikes. Pure win.
 
