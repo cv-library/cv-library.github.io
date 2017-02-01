@@ -30,5 +30,7 @@ After spending the evening together working on the module, some of us kept at it
 
 ![Pull Request Accepted!]({{ site.url }}/images/prc1-accepted.jpg){:width="80%"}
 
-In February we have been allocated: .....................................
+In February we have been allocated [Git::Hooks](https://metacpan.org/pod/Git::Hooks), which is a module easier for us to get our teeth into perhaps as we use Git as our version control system.
+
+
 
