@@ -20,7 +20,7 @@ Another part of our team wanted to see the module at work, and started trying to
 
 We emailed the author ([Shawn Laffan](https://metacpan.org/author/SLAFFAN)) of the module and even before we left for the night we had a reply (from Australia), which was a great boost and informed some of our efforts.
 
-Of course getting TravisCI and the cpanfile configured "just right" took a little while ([44 builds](https://travis-ci.org/cv-library/biodiverse/builds)) but taught us a lot about the module and it's dependencies. Many of team had not been directly involved in our internal CI project (we use Jenkins) so it was really valuable for our team to start a new CI integration and understand how much effort can go into it... and how nice it is that our automated test and build pipeline "just works".
+Of course getting TravisCI and the cpanfile configured "just right" took a little while ([44 builds!](https://travis-ci.org/cv-library/biodiverse/builds)) but taught us a lot about the module and it's dependencies. Many of team had not been directly involved in our internal CI project (we use Jenkins) so it was really valuable for our team to start a new CI integration and understand how much effort can go into it... and how nice it is that our automated test and build pipeline "just works".
 
 
 The culture of CV-Library is to push early and often, so we pushed a cpanfile file commit and pull request. Which later was abandoned in favour of the TravisCI commit which superceeded it. We also prototyped a commit for the Author that gave the NoGui module it's own github repo (the module is currently bundled within another module).
