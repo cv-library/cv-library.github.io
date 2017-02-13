@@ -12,21 +12,20 @@ It was a great evening, starting with an introduction to the history and structu
 
 ![CV-Library Team]({{ site.url }}/images/prc1-team.jpg){:width="80%"}
 
-Part of the team got to work with a Cpanfile to make installations simpler; which turned into integrating TravisCI. At CV-Library we make heavy use of continuous integration; so it was a natural fit for us to work on. 
+Some of us got to work with a Cpanfile to make installations simpler; which turned into integrating TravisCI. At CV-Library we make heavy use of continuous integration; so it was a natural fit for us to work on.
 
-Another part of our team wanted to see the module at work, and started trying to install the module (and it's base project) on one of our PCs. This meant getting familiar with the pre-requisites (fortran, no really fortran) which was in fact closely related to what the rest of the team was doing.
+Another part of our team wanted to see the module at work, and started trying to install the module (and it's base project) on one of our PCs. This meant getting familiar with the pre-requisites (Fortran, no really Fortran) which was in fact closely related to what the rest of the team was doing.
 
 ![BioDiverse screenshot]({{ site.url }}/images/prc1-biodiverse.jpg){:width="80%"}
 
-Of course getting TravisCI and the cpanfile configured "just right" took a little while (44 builds) but taught us a lot about the module and it's dependencies. Many of team had not been directly involved in our internal CI project (we use Jenkins) so it was really valuable for our team to start a new CI integration and understand how much effort can go into it... and how nice it is that our automated test and build pipeline "just works"
+We emailed the author ([Shawn Laffan](https://metacpan.org/author/SLAFFAN)) of the module and even before we left for the night we had a reply (from Australia), which was a great boost and informed some of our efforts.
 
-At some point in the evening we emailed the author ([Shawn Laffan](https://metacpan.org/author/SLAFFAN)) of the module and even before we left for the night we had a reply (from Australia), which was a great boost and informed some of our efforts.
+Of course getting TravisCI and the cpanfile configured "just right" took a little while ([44 builds](https://travis-ci.org/cv-library/biodiverse/builds)) but taught us a lot about the module and it's dependencies. Many of team had not been directly involved in our internal CI project (we use Jenkins) so it was really valuable for our team to start a new CI integration and understand how much effort can go into it... and how nice it is that our automated test and build pipeline "just works".
+
 
 The culture of CV-Library is to push early and often, so we pushed a cpanfile file commit and pull request. Which later was abandoned in favour of the TravisCI commit which superceeded it. We also prototyped a commit for the Author that gave the NoGui module it's own github repo (the module is currently bundled within another module).
 
-It's interesting working on another person's module; it teaches a lot about the ideas and approaches that other authors take.
-
-After spending the evening together working on the module, some of us kept at it, lunchbreaks and evenings have included conversations and firther commits. And four days later the auther accepted pull request #648 and CV-Library officially had it's first accepted pull request in the CPAN Pull Request Challenge 2017! Not bad for our very first module!
+After spending the evening together working on the module, some of us kept at it, lunchbreaks and evenings have included conversations and further commits. And four days later the auther accepted pull request #648 and CV-Library officially had it's first accepted pull request in the CPAN Pull Request Challenge 2017! Not bad for our very first module!
 
 ![Pull Request Accepted!]({{ site.url }}/images/prc1-accepted.jpg){:width="80%"}
 
