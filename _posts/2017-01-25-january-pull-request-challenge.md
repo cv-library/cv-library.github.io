@@ -1,7 +1,7 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, January 2017.
+title: CPAN Pull Request Challenge, January 2017
 subtitle: Perl, Pizza and a mere 44 builds.
 tags: cpan perl cpan-prc travisci
 ---
@@ -10,13 +10,13 @@ This month (January 2017) the development team here at CV-Library joined the CPA
 
 It was a great evening, starting with an introduction to the history and structure of the challenge itself, then a little discussion (over pizza) about what contributions we could make. We identified two areas we could work on and got to work.
 
-![CV-Library Team]({{ site.url }}/images/prc1-team.jpg){:width="80%"}
+[![CV-Library Team](/images/prc1-team.jpg)](/images/prc1-team.jpg)
 
 Some of us got to work with a Cpanfile to make installations simpler; which turned into integrating TravisCI. At CV-Library we make heavy use of continuous integration; so it was a natural fit for us to work on.
 
 Another part of our team wanted to see the module at work, and started trying to install the module (and it's base project) on one of our PCs. This meant getting familiar with the pre-requisites (Fortran, no really Fortran) which was in fact closely related to what the rest of the team was doing.
 
-![BioDiverse screenshot]({{ site.url }}/images/prc1-biodiverse.jpg){:width="80%"}
+[![BioDiverse screenshot](/images/prc1-biodiverse.jpg)](/images/prc1-biodiverse.jpg)
 
 We emailed the author ([Shawn Laffan](https://metacpan.org/author/SLAFFAN)) of the module and even before we left for the night we had a reply (from Australia), which was a great boost and informed some of our efforts.
 
@@ -27,7 +27,7 @@ The culture of CV-Library is to push early and often, so we pushed a cpanfile fi
 
 After spending the evening together working on the module, some of us kept at it, lunchbreaks and evenings have included conversations and further commits. And four days later the auther accepted pull request #648 and CV-Library officially had it's first accepted pull request in the CPAN Pull Request Challenge 2017! Not bad for our very first module!
 
-![Pull Request Accepted!]({{ site.url }}/images/prc1-accepted.jpg){:width="80%"}
+[![Pull Request Accepted!](/images/prc1-accepted.jpg)](/images/prc1-accepted.jpg)
 
 In February we have been allocated [Git::Hooks](https://metacpan.org/pod/Git::Hooks), which is a module easier for us to get our teeth into perhaps as we use Git as our version control system.
 

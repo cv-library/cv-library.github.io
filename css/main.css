@@ -41,6 +41,12 @@ a:hover {
 
 a:visited { color: #1756a9 }
 
+article img {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
 blockquote {
     border-left: 5px solid #eee;
     margin: 0 0 20px;
