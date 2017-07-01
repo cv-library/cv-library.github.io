@@ -32,7 +32,7 @@ As some of the team had started using the module before the challenge we walked 
 
 [![Merge requests](/images/Commits_ewaters_altsql_shell.png)](/images/Commits_ewaters_altsql_shell.png)
 
-Along with a new feature we were able to imporove the testing code around the module. Both fixing some tests that had some problems and also extending the functionality and flexibility of teh tests also. We resolved some small behavioral issues in some edge cases as well.
+Along with a new feature we were able to imporove the testing code around the module. Both fixing some tests that had some problems and also extending the functionality and flexibility of the tests also. We resolved some small behavioral issues in some edge cases as well.
 
 {% highlight perl %}
 use strict;
@@ -65,7 +65,7 @@ done_testing;
 {% endhighlight %}
 
 
-The author [Eric Waters](https://metacpan.org/author/EWATERS), was really communicative and enthusiastic towards our efforts which was great and helped make this one of the most energetic evenings we have had this year... alternatively it could have been the readical decision to have Chinese food rather than Pizza!
+The author [Eric Waters](https://metacpan.org/author/EWATERS), was really communicative and enthusiastic towards our efforts which was great and helped make this one of the most energetic evenings we have had this year... alternatively it could have been the radical decision to have Chinese food rather than Pizza!
 
 
 [![Chinese Food](/images/chinese_food.jpg)](/images/chinese_food.png)
