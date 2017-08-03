@@ -20,7 +20,6 @@ Initially we didn’t bother filling in the expected output on the test with any
 
 The one thing missing from the output of that module was line numbers though.  To get them we used gdb.  Initially we just ran the test and let it crash.  On Ubuntu this produces a file in /var/crash which contains lots of crash information.  However, this needs to be converted to a traditional coredump which gdb can understand. We used apport-unpack to extract that file.  This extracts a lot of files with information about the problem which can be sent to Ubuntu when you report a problem.  One of those files is one named CoreDump containing what we want.
 
-	$ mkdir
 	$ apport-unpack /var/crash/perl.crash crashinfo
 	$ cd crashinfo
 
