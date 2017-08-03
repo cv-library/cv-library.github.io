@@ -12,15 +12,15 @@ Here at CV-Library we have really technical testers.  Our testers take our code 
 
 We first tracked down where in perl the code was crashing.  This turned out to be when the bake_cookie function was called in the HTTP::XSCookies module.  We grabbed the value that was being passed to it and created a test case to demonstrate the problem.  Outside the test environment it still exhibited the same behaviour with the crash.
 
-   is bake_cookie( 'test', "!\"\x{a3}\$%^*(*^%\$\x{a3}\":1" ),
-        'test=%21%22%a3%24%25%5e%2a%28%2a%5e%25%24%a3%22%3a1';
+	is bake_cookie( 'test', "!\"\x{a3}\$%^*(*^%\$\x{a3}\":1" ),
+		'test=%21%22%a3%24%25%5e%2a%28%2a%5e%25%24%a3%22%3a1';
 
 
 Initially we didn’t bother filling in the expected output on the test with anything valid since it crashed before it got to the comparison.  With this input we initially observed a segfault (it should be noted that if you try this yourself you might not segfault*).  Initially we used [Devel::cst](https://metacpan.org/pod/Devel::cst) to get a simple stack trace which suggested the problem was within the URIencoding.  Much like other Devel namespace modules you can just run perl with the -d flag, so <code>perl -d:cst t/test-that-crashes.t</code>.
 
 The one thing missing from the output of that module was line numbers though.  To get them we used gdb.  Initially we just ran the test and let it crash.  On Ubuntu this produces a file in /var/crash which contains lots of crash information.  However, this needs to be converted to a traditional coredump which gdb can understand. We used apport-unpack to extract that file.  This extracts a lot of files with information about the problem which can be sent to Ubuntu when you report a problem.  One of those files is one named CoreDump containing what we want.
 
-	$ mkdir 
+	$ mkdir
 	$ apport-unpack /var/crash/perl.crash crashinfo
 	$ cd crashinfo
 
@@ -53,7 +53,7 @@ With that we could run gdb to interpret the core dump.  We can then ask it for a
 	#11 0x0000000000443c59 in perl_run ()
 	#12 0x000000000041cbbb in main ()
 
-Working on the assumption that the bug is in the local code rather than the C standard library we can see where the bug is likely to be.  Uri.c line 72 seems to be where the crash is occurring.  
+Working on the assumption that the bug is in the local code rather than the C standard library we can see where the bug is likely to be.  <code>Uri.c</code> line 72 seems to be where the crash is occurring.
 
 That gives us a good idea of where it’s crashing, and in truth we probably could figure out the problem from just looking at that and the source code, but it’s a lot easier to run it live.  Running it live in gdb gives us better access to explore the state of the program when the problem occurs.
 
@@ -94,10 +94,10 @@ We then did a little listing (l) to get our bearings, and then lots of prints (p
 	61	            tgt->data[t++] = src->data[s++];
 	62	            continue;
 	63	        }
-	64	
+	64
 	65	        /* copy encoded character from our table */
 	66	        memcpy(tgt->data + t, v, 3);
-	67	
+	67
 	68	        /* we used up 3 characters (%XY) in target
 	69	         * and 1 character from source */
 	70	        t += 3;
@@ -140,6 +140,6 @@ It should be noted that a perlbrew based environment makes all of this sort of p
 
 Hopefully that gives you a brief taste of using gdb to examine crashes and a few of the commands you might use.  You can type “help cmd” to get more info about a command (and help more generally).  A quick reference like this might also be handy - http://www.cs.umd.edu/class/spring2014/cmsc414-0201/downloads/gdb-refcard.pdf.
 
-> * When trying to reproduce the error, in order to document it for this blog post I was unable to reproduce the crash, only the bug.  The out of bounds memory layout on the day in question must have been different and so it crashed more reliably.  When it didn’t crash it must have been full of 0’s which the code could deal with without crashing.  When it had values it thought they were valid pointers and tried to dereference them.  Of course, it could have been worse if they turned out to be valid pointers to memory that wasn’t supposed to be exposed.
+> (*) When trying to reproduce the error, in order to document it for this blog post I was unable to reproduce the crash, only the bug.  The out of bounds memory layout on the day in question must have been different and so it crashed more reliably.  When it didn’t crash it must have been full of 0’s which the code could deal with without crashing.  When it had values it thought they were valid pointers and tried to dereference them.  Of course, it could have been worse if they turned out to be valid pointers to memory that wasn’t supposed to be exposed.
 
 
