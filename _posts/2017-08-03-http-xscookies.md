@@ -8,7 +8,7 @@ tags: cpan perl xs
 
 Recently we discovered a crash in one of the modules we use.  It was a simple little bug to fix and we thought it would be interesting to demonstrate how you can find more information about a crash in an XS module and potentially fix it.  Just because it’s not all perl doesn’t mean it’s completely opaque.
 
-Here at CV-Library we have really technical testers.  Our testers take our code to pieces and try all sorts of evil inputs to see how they can break our code.  I’m not sure that being able to torture code is an actual job requirement, but it certainly helps.  While trying to do all sorts of strange things to a feature we’d written we happened to discover a bug in our cookie processing.  The HTTP::XSCookies module was segfaulting with the cookies we were asking it to generate.
+Here at CV-Library we have really technical testers.  Our testers take our code to pieces and try all sorts of evil inputs to see how they can break our code.  I’m not sure that being able to torture code is an actual job requirement, but it certainly helps.  While trying to do all sorts of strange things to a feature we’d written we happened to discover a bug in our cookie processing.  The [HTTP::XSCookies](https://metacpan.org/pod/HTTP::XSCookies) module was segfaulting with the cookies we were asking it to generate.
 
 We first tracked down where in perl the code was crashing.  This turned out to be when the bake_cookie function was called in the HTTP::XSCookies module.  We grabbed the value that was being passed to it and created a test case to demonstrate the problem.  Outside the test environment it still exhibited the same behaviour with the crash.
 
