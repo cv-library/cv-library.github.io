@@ -1,8 +1,8 @@
 ---
 author: Colin Newell
 layout: post
-subtitle: Sub title here
-title: libwww-perl - CPAN Pull Request Challenge, April 2017
+title: Going up river
+subtitle: libwww-perl - CPAN Pull Request Challenge, April 2017
 tags: cpan perl cpan-prc travisci git
 blurb:
 ---
