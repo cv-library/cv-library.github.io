@@ -1,8 +1,8 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, February 2017
-subtitle: The pull request to pizza ratio
+title: The pull request to pizza ratio
+subtitle: Git::Hooks - CPAN Pull Request Challenge, February 2017
 tags: cpan perl cpan-prc travisci git
 ---
 

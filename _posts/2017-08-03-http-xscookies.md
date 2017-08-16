@@ -1,8 +1,8 @@
 ---
 author: Colin Newell
 layout: post
-title: Fixing a bug in HTTP::XSCookies
 subtitle: Dealing with XS crashes
+title: Fixing a bug in HTTP::XSCookies
 tags: cpan perl xs
 ---
 

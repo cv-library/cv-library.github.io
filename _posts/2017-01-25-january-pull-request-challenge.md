@@ -1,8 +1,8 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, January 2017
-subtitle: Perl, Pizza and a mere 44 builds.
+title: Perl, Pizza and a mere 44 builds
+subtitle: Task::Biodiverse::NoGui - CPAN Pull Request Challenge, January 2017
 tags: cpan perl cpan-prc travisci
 ---
 

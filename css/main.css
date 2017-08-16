@@ -132,6 +132,15 @@ nav a.active {
   max-width: 700px;
 }
 
+.home h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.home p {
+    margin-top: 0px;
+}
+
 .home a {
     display: block;
     font-size: 24px;

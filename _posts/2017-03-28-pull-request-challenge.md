@@ -1,8 +1,8 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, March 2017
-subtitle: XS, threading and tests For The Win
+title: XS, threading and tests For The Win
+subtitle: Linux::Unshare - CPAN Pull Request Challenge, March 2017
 tags: cpan perl cpan-prc travisci git xs
 ---
 

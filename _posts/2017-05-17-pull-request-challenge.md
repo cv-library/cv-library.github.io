@@ -1,8 +1,8 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, May 2017
-subtitle: App::AltSQL
+title: App::AltSQL
+subtitle: App::AltSQL - CPAN Pull Request Challenge, May 2017
 tags: cpan perl cpan-prc mysql
 ---
 

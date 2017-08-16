@@ -1,8 +1,8 @@
 ---
 author: Lance Wicks
 layout: post
-title: CPAN Pull Request Challenge, June 2017
-subtitle: Parse::ErrorString::Perl
+title: Parse::ErrorString::Perl
+subtitle: Parse::ErrorString::Perl - CPAN Pull Request Challenge, June 2017
 tags: cpan perl cpan-prc
 ---
 
