@@ -137,6 +137,13 @@ nav a.active {
     margin-bottom: 0px;
 }
 
+.home h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 .home p {
     margin-top: 0px;
 }
