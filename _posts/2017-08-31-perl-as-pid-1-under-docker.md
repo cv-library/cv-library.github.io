@@ -84,3 +84,11 @@ Other than adding signal handlers to all of our applications, we could
 instead use an init daemon such as
 [dumb-init](https://github.com/Yelp/dumb-init), or since Docker 1.13
 you can pass an '--init' flag to make docker run do something similar.
+
+Another alternative would be to use a system other than docker - rkt
+runs container processes as PID 2 rather than PID 1, which is looking
+increasingly sensible given the special handling by the kernel.
+
+For more on this problem and PID namespaces generally, try [this
+Hacker Noon
+article](https://hackernoon.com/the-curious-case-of-pid-namespaces-1ce86b6bc900).
