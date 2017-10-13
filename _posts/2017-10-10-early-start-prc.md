@@ -2,7 +2,7 @@
 author: Colin Newell
 layout: post
 subtitle: Test2::Suite
-title: An early start on the pull request challenge
+title: An early start on October's pull request challenge
 tags: perl cpan cpan-prc
 ---
 
@@ -115,5 +115,5 @@ While there is an obvious difference between the variable at the start and end, 
 
 The test came from the original bug report and just makes use of [Test2::Require::Module](https://metacpan.org/pod/Test2::Require::Module) to ensure it only runs if the module it’s mocking is available.  With the addition of a condition to limit the scope of the change to just that version of Perl we had our first pull request accepted.
 
-Huge thanks to Chad Granum for being responsive and his suggestions to add the conditional bits to ensure everything fits in smoothly.
+Huge thanks to [Chad Granum](https://metacpan.org/author/EXODIST) for being responsive and his suggestions to add the conditional bits to ensure everything fits in smoothly.
 
