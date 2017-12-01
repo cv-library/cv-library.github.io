@@ -46,5 +46,5 @@ maintenance.
 
 ## Further reading
 
-- https://en.wikipedia.org/wiki/Risk-based_testing
-- https://testing.googleblog.com/2014/05/testing-on-toilet-risk-driven-testing.html
+- [Wikipedia on risk-based testing](https://en.wikipedia.org/wiki/Risk-based_testing)
+- [Google Testing blog post on risk-driven testing](https://testing.googleblog.com/2014/05/testing-on-toilet-risk-driven-testing.html)
