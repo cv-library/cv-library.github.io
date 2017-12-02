@@ -41,5 +41,4 @@ discipline in itself.
 
 ## Further reading
 
-- [https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html](Just say no to more end-to-end tests)
-
+- [Google Testing Blog: Just say no to more end-to-end tests](https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html)
