@@ -2,7 +2,7 @@
 author: Tim Retout
 layout: post
 title: Testing microservices
-subtitle: Out-of-process component tests with mountebank
+subtitle: "Component"/"Service" tests
 tags: micoservices testing advent-2017
 ---
 
