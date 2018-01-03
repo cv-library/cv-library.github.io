@@ -27,4 +27,4 @@ document more examples of interesting test situations.  Perhaps that's
 something we can do more of next year.
 
 For now, thank you for reading!  If you have any feedback or
-questions, drop us an email - the address is ot the foot of the page.
+questions, drop us an email - the address is at the foot of the page.
