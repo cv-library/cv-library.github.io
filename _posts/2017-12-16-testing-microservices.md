@@ -3,7 +3,7 @@ author: Tim Retout
 layout: post
 title: Testing microservices
 subtitle: Component/Service tests
-tags: micoservices testing advent-2017
+tags: microservices testing advent-2017
 ---
 
 *Part sixteen of [a series of posts about automated

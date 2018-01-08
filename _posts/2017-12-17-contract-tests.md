@@ -3,7 +3,7 @@ author: Tim Retout
 layout: post
 title: Contract tests
 subtitle: Pacts between microservices
-tags: micoservices testing advent-2017
+tags: microservices testing advent-2017
 ---
 
 *Part seventeen of [a series of posts about automated
