@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part four of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Tests can be used to document behaviour, and to ensure that APIs you
 are writing are easy to use for the caller.  If implementation details

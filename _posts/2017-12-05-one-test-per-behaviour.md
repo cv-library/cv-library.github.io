@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part five of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 We are building a self-driving car in Perl.  It will pick up
 jobseekers, and play upbeat music as it drives them to their job
@@ -81,7 +81,7 @@ to new behaviours.
 In addition, the tests end up describing the behaviour of the system
 under test, which can help with understanding unfamiliar code.  This
 relates closely to [yesterday's post about testing reusable
-interfaces](http://tech-blog.cv-library.co.uk/2017/12/04/test-public-interfaces/).
+interfaces](https://tech-blog.cv-library.co.uk/2017/12/04/test-public-interfaces/).
 
 ## Further reading
 

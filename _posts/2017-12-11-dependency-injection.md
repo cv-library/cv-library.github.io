@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part eleven of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 To make unit testing possible, you need to be able to mock out
 accesses to resources such as the filesystem and databases.  The best

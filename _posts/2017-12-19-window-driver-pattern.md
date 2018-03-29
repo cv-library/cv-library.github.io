@@ -7,7 +7,7 @@ tags: testing advent-2017
 ---
 
 *Part nineteen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 The Window Driver pattern is described in the book *Continuous
 Delivery*.  It is explained there in terms of native GUI apps, but is

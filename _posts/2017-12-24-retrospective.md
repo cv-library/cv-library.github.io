@@ -7,7 +7,7 @@ tags: testing advent-2017
 ---
 
 *Part twenty-four of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 We've reached the last day of Advent, and Christmas is nearly upon us.
 

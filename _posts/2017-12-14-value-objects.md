@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part fourteen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Value objects are defined by their attributes - if two value objects
 have the same attributes, they are equal.  For example:

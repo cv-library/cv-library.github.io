@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part three of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Naming things is one of the hard problems of computer
 science. However, when it comes to tests, here's a guideline that

@@ -7,11 +7,11 @@ tags: perl testing advent-2017
 ---
 
 *Part twenty-one of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 It is often not worth achieving 100% test coverage; [decisions about
 testing should be based on
-risk](http://tech-blog.cv-library.co.uk/2017/12/01/risk-based-testing/).
+risk](https://tech-blog.cv-library.co.uk/2017/12/01/risk-based-testing/).
 However, being able to look at which sections of code have been
 covered, or spotting branches of code which have not been exercised,
 can be very useful to evaluate whether tests are missing.

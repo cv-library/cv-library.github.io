@@ -7,7 +7,7 @@ tags: testing advent-2017
 ---
 
 *Part twenty of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 The most popular tool for browser automation is Selenium. There have
 been various different projects under the "Selenium" umbrella, but the

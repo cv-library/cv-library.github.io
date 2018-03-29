@@ -7,10 +7,10 @@ tags: testing advent-2017
 ---
 
 *Part eighteen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 As [we discussed
-previously](http://tech-blog.cv-library.co.uk/2017/12/02/test-pyramid/),
+previously](https://tech-blog.cv-library.co.uk/2017/12/02/test-pyramid/),
 the standard advice is to minimize the number of browser-based
 end-to-end tests written.  The advantage of e2e tests is that they
 mimic a real user; the disadvantage is that they tend to be slow and

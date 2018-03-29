@@ -7,10 +7,10 @@ tags: microservices testing advent-2017
 ---
 
 *Part seventeen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Continuing the example from [yesterday's
-post](http://tech-blog.cv-library.co.uk/2017/12/16/testing-microservices/),
+post](https://tech-blog.cv-library.co.uk/2017/12/16/testing-microservices/),
 we would like to create some form of tests to catch incompatible
 changes in the geolocation service, which would potentially break the
 navigation service.

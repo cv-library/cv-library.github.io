@@ -7,7 +7,7 @@ tags: testing advent-2017
 ---
 
 *Part seven of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Most of the advice so far has been generic to any type of testing.  In
 the next few posts in this series, I want to look more specifically at

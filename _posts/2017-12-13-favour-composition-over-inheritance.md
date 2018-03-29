@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part thirteen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 The idea that object composition is to be preferred to class
 inheritance goes back a long way - it is discussed in the Gang of Four

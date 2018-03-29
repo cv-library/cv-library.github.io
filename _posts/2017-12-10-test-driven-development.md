@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part ten of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 While discussing unit testing, it is worth looking at the idea of
 test-driven development, and how we might use it to improve the

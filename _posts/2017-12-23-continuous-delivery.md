@@ -7,7 +7,7 @@ tags: testing advent-2017
 ---
 
 *Part twenty-three of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 So you've written some tests.  What do you do with them?
 

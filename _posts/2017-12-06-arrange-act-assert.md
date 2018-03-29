@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part six of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 There is a guideline for structuring individual unit tests, known as
 "Arrange, Act, Assert".  The idea is, most tests should be structured
@@ -71,7 +71,7 @@ sub three_failed_login_attempts_should_lock_account : Test {
 {% endhighlight %}
 
 The key is to have [one test per
-behaviour](http://tech-blog.cv-library.co.uk/2017/12/05/one-test-per-behaviour/).
+behaviour](https://tech-blog.cv-library.co.uk/2017/12/05/one-test-per-behaviour/).
 
 ## Further reading
 

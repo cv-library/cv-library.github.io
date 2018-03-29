@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part nine of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Mocking out time required overriding a relatively small number of core
 functions.  For something like filesystem access, there are a wide

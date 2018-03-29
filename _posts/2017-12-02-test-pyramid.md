@@ -6,7 +6,7 @@ title: The Test Pyramid
 tags: testing advent-2017
 ---
 
-*Part two of [a series of posts about automated testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+*Part two of [a series of posts about automated testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Yesterday we talked about [risk-based
 testing](/2017/12/01/risk-based-testing/). In general, however, there

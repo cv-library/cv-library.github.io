@@ -7,7 +7,7 @@ tags: perl testing advent-2017
 ---
 
 *Part fifteen of [a series of posts about automated
- testing](http://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
+ testing](https://tech-blog.cv-library.co.uk/tags/#advent-2017-ref).*
 
 Global state can cause problems with testing.
 
